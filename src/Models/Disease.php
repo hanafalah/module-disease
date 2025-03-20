@@ -1,16 +1,17 @@
 <?php
 
-namespace Gii\ModuleDisease\Models;
+namespace Hanafalah\ModuleDisease\Models;
 
-use Gii\ModuleDisease\Resources\Disease\ViewDisease;
+use Hanafalah\ModuleDisease\Resources\Disease\ViewDisease;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use Zahzah\LaravelHasProps\Concerns\HasProps;
-use Zahzah\LaravelSupport\Models\BaseModel;
+use Hanafalah\LaravelHasProps\Concerns\HasProps;
+use Hanafalah\LaravelSupport\Models\BaseModel;
 
-class Disease extends BaseModel {
+class Disease extends BaseModel
+{
     use HasProps, SoftDeletes;
 
-    protected $list  = ['id','name','local_name','code','version','classification_disease_id','props'];
+    protected $list  = ['id', 'name', 'local_name', 'code', 'version', 'classification_disease_id', 'props'];
     protected $show  = [];
 
     protected $casts = [
@@ -19,11 +20,13 @@ class Disease extends BaseModel {
         'code' => 'string'
     ];
 
-    public function toViewApi(){
+    public function toViewApi()
+    {
         return new ViewDisease($this);
     }
 
-    public function classificationDisease(){
+    public function classificationDisease()
+    {
         return $this->belongsToModel('ClassificationDisease');
     }
 }

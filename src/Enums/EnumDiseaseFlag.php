@@ -1,8 +1,9 @@
 <?php
 
-namespace Gii\ModuleDisease\Enums;
+namespace Hanafalah\ModuleDisease\Enums;
 
-enum EnumDiseaseFlag: string {
+enum EnumDiseaseFlag: string
+{
     case ICD            = "ICD";
     case MANUAL_DISEASE = "MANUAL_DISEASE";
 }

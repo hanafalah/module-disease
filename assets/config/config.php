@@ -1,6 +1,6 @@
 <?php
 
-use Gii\ModuleDisease\{
+use Hanafalah\ModuleDisease\{
     Models as ModuleDisease,
     Contracts
 };

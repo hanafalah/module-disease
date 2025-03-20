@@ -1,10 +1,8 @@
 <?php
 
-namespace Gii\ModuleDisease;
+namespace Hanafalah\ModuleDisease;
 
-use Gii\ModuleDisease\Contracts\ModuleDisease as ContractsModuleDisease;
-use Zahzah\LaravelSupport\Supports\PackageManagement;
+use Hanafalah\ModuleDisease\Contracts\ModuleDisease as ContractsModuleDisease;
+use Hanafalah\LaravelSupport\Supports\PackageManagement;
 
-class ModuleDisease extends PackageManagement implements ContractsModuleDisease{
-
-}
+class ModuleDisease extends PackageManagement implements ContractsModuleDisease {}

@@ -1,5 +1,5 @@
 {
-    "name": "gii/module-disease",
+    "name": "hanafalah/module-disease",
     "description": "module for data diasease in klinik or puskesmas",
     "type": "package",
     "require": {
@@ -8,17 +8,17 @@
         "http-interop/http-factory-guzzle": "^1.2",
         "illuminate/support": "^11.26",
         "symfony/process": "^7.1",
-        "zahzah/laravel-support": "1.x"
+        "hanafalah/laravel-support": "1.x"
     },
     "autoload": {
         "psr-4": {
-            "Gii\\ModuleDisease\\": "src/"
+            "Hanafalah\\ModuleDisease\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Gii\\ModuleDisease\\ModuleDiseaseServiceProvider"
+                "Hanafalah\\ModuleDisease\\ModuleDiseaseServiceProvider"
             ]
         }
     },
